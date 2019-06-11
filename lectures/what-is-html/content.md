@@ -48,73 +48,17 @@
 
 -
 ### How does the web work?
-<img src="how does the web work.gif">
-
-
-
-
-
+<img src="basic-web.gif">
 
 
 -
-## Topic 2
-* Sub-topic 2A
-* Sub-topic 2B
-* Sub-topic 2C
-
--
-### Sub-topic 2A
-* Discussion point 2A.1
-* Discussion point 2A.2
-* Discussion point 2A.3
+### Typical Web-Request Interactions
+* Submitting login information
+  * Requests access using provided information
+* Clicking a button
+* Clicking a link
 
 
 -
-### Sub-topic 2B
-* Discussion point 2B.1
-* Discussion point 2B.2
-* Discussion point 2B.3
-
-
--
-### Sub-topic 2C
-* Discussion point 2C.1
-* Discussion point 2C.2
-* Discussion point 2C.3
-
-
-
-
-
-
-
-
-
-
--
-## Topic 3
-* Sub-topic 3A
-* Sub-topic 3B
-* Sub-topic 3C
-
-
-
--
-### Sub-topic 3A
-* Discussion point 3A.1
-* Discussion point 3A.2
-* Discussion point 3A.3
-
-
--
-### Sub-topic 3B
-* Discussion point 3B.1
-* Discussion point 3B.2
-* Discussion point 3B.3
-
-
--
-### Sub-topic 3C
-* Discussion point 3C.1
-* Discussion point 3C.2
-* Discussion point 3C.3
+### How do I view HTTP messages being sent?
+* Developer tools embedded in browser (demo)
