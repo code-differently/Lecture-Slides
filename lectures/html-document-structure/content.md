@@ -41,7 +41,7 @@
 
 
 
-
+-
 -
 ### Topic 2
 * Sub-topic 2A
@@ -76,7 +76,7 @@
 
 
 
-
+-
 -
 ### Topic 3
 * Sub-topic 3A
@@ -104,3 +104,11 @@
 * Discussion point 3C.1
 * Discussion point 3C.2
 * Discussion point 3C.3
+
+
+-
+-
+## Lecture Summary
+* Topic 1 Summary
+* Topic 2 Summary
+* Topic 3 Summary
