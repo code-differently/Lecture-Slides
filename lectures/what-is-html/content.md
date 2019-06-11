@@ -11,14 +11,20 @@
 * History of HTML
 * How does the web work?
 
+
+
+-
 -
 ### What is HTML?
-* Hyper Text Mark Up Language
+* Hyper Text Mark Up Language (HTML)
 * Used to create displays of content information on a webpage
   * These displays are called _web-elements_
 * Tells browser how to display content
 
 
+
+
+-
 -
 ### History of HTML
 * 1991 - First web page
@@ -28,6 +34,9 @@
 * 2014 - HTML5 is invented
 
 
+
+
+-
 -
 ### How does the web work?
 * _Hypertext Transfer Protocol_ or _HTTP_ is the language a _client_ uses to send a message to a web-application.
