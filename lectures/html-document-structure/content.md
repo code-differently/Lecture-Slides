@@ -60,7 +60,7 @@
 
 -
 -
-#### The <body> tag
+### The <body> tag
 * Follows the <head> tag and has open and closing tags
 * <body>...</body>
 * Holds the visible content of a webpage
@@ -164,22 +164,18 @@
 * The file path has to include the full URL (most commonly used for external site links).
 * Can be used to add in an image
 ``` HTML
-						<a href="page.html">Link to a local page.</a>
+						<a href="www.google.com">Link to a local page.</a>
 ```
-``` HTML
-						<img src="image.jpg" height="300px" width="200px">
-```
+
 
 -
 #### Relative Links
 * The file path is relative to the index.html page’s location.
 * Can be used to add in an image
 ``` HTML
-						<a href="www.google.com">Link to an external page.</a>
+						<a href="page.html">Link to a local page.</a>
 ```
-``` HTML
-						<img src="www.website.com/image.jpg" height="300px" width="200px">
-```
+
 -
 #### Anchor Links
 * You can tell the browser to go to a specific section of the page
@@ -203,6 +199,6 @@
 -
 ## Lecture Summary
 * DOCTYPE : Tells the browser which version of the markup language the page is using
-* <html> : All content is contained within these open and closing tags
-* <head> : Contains the title and metadata information about the page. Not visible to the user.
-* <body> : Contain all the visible content of a webpage.
+* Nesting : The placement of elements inside of other containing tags
+* <body> : Contains all the visible content of a webpage. What elements can be contained inside of the body tag?
+* Links : Three different types of links. Relative, Absolute, and Anchor
