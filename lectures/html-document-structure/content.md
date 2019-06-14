@@ -1,114 +1,208 @@
-# Title of Lecture
+# HTML Document Structure
 
 
 -
 -
-## Lecture Overview
-* Topic 1
-* Topic 2
-* Topic 3
-
-
--
--
-### Topic 1
-* Sub-topic 1A
-* Sub-topic 1B
-* Sub-topic 1C
-
--
-#### Sub-topic 1A
-* Discussion point 1A.1
-* Discussion point 1A.2
-* Discussion point 1A.3
-
-
--
-#### Sub-topic 1B
-* Discussion point 1B.1
-* Discussion point 1B.2
-* Discussion point 1B.3
-
-
--
-#### Sub-topic 1C
-* Discussion point 1C.1
-* Discussion point 1C.2
-* Discussion point 1C.3
-
-
-
+## Document Structure
+* DOCTYPE
+* Nesting
+* Body
+* Links
 
 
 
 -
 -
-### Topic 2
-* Sub-topic 2A
-* Sub-topic 2B
-* Sub-topic 2C
+### DOCTYPE
+* The first thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.
+* <!DOCTYPE html>
 
 -
-#### Sub-topic 2A
-* Discussion point 2A.1
-* Discussion point 2A.2
-* Discussion point 2A.3
-
+-
+### Nesting
+* HTML is structured by nesting elements inside other elements. This is done by placing elements inside other containing tags.
+* For example, the <p> nested inside of the <body> tags is a “child” or a “descendent” of the body.
+``` HTML
+						<body>
+							<p>A paragraph inside the body tag</p>
+						</body>
+						```
 
 -
-#### Sub-topic 2B
-* Discussion point 2B.1
-* Discussion point 2B.2
-* Discussion point 2B.3
-
-
--
-#### Sub-topic 2C
-* Discussion point 2C.1
-* Discussion point 2C.2
-* Discussion point 2C.3
-
-
-
-
-
-
-
+#### The <html> tag
+* Like a sandwich, the HTML document has open and closing tags
+* <html>...</html>
+* Everything in an HTML document is surrounded by <html> tag
+<br/>
+```HTML
+    <!DOCTYPE html>
+      <html>
+      </html>
+```
 
 
 -
 -
-### Topic 3
-* Sub-topic 3A
-* Sub-topic 3B
-* Sub-topic 3C
-
-
-
--
-#### Sub-topic 3A
-* Discussion point 3A.1
-* Discussion point 3A.2
-* Discussion point 3A.3
-
-
--
-#### Sub-topic 3B
-* Discussion point 3B.1
-* Discussion point 3B.2
-* Discussion point 3B.3
+#### The <head> tag
+* Follows the <html> tag and has open and closing tags
+* <head>...</head>
+* Contains the title and metadata information about the page
+* Meta information is mostly invisible to the user, but has many purposes, like providing information to search engines.
+```HTML
+    <!DOCTYPE html>
+      <html>
+        <head>
+          <title>My Page</title>
+        </head>
+      </html>
+```      
 
 
 -
-#### Sub-topic 3C
-* Discussion point 3C.1
-* Discussion point 3C.2
-* Discussion point 3C.3
+-
+#### The <body> tag
+* Follows the <head> tag and has open and closing tags
+* <body>...</body>
+* Holds the visible content of a webpage
+* Headings, paragraphs, lists, quotes, images, and links are just a few of the elements that can be contained within the body tag.
 
+-
+-
+``` HTML
+						<!DOCTYPE html>
+							<html>
+							  	<head>
+							    	<title>Title of the page</title>
+							  	</head>
+							  	<body>
+							    	The page content here.
+								</body>
+						</html>
+```
+
+
+-
+#### Headings
+* HTML includes six levels of heading which are ranked according to importance, not size
+* These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
+``` HTML
+						<h1>Written</h1>
+						<h2>In</h2>
+						<h3>Decreasing</h3>
+						<h4>Order</h4>
+						<h5>Of</h5>
+						<h6>Importance</h6>
+```
+
+-
+#### Paragraphs
+* This element, with open and closing tags, will allow you to create paragraphs.
+* <p>...</p>
+* The browser does not care about line breaks or tabs in your code. Use the <p> tag to split lines of text displayed on the page.
+``` HTML
+						<body>
+							<p>A paragraph inside the body tag</p>
+						</body>
+```
+
+-
+#### Horizonal Line Break
+* This element represents a sectional break between paragraphs. It can be used as an indicator when changing a subject within as section.
+``` HTML
+      <html>
+        <head>
+          <title>first page</title>
+        </head>
+          <body>
+              <p>This is a paragraph.</p>
+              <hr>
+              <p>This is another paragraph. </p>
+          </body>
+      </html>
+```
+
+-
+#### Single Line Break     
+* Use the <br /> tag to add a single line of text without starting a new paragraph.
+* The <br /> element is an empty HTML element. It has no end tag.
+```HTML
+    <html>
+      <head>
+          <title>first page</title>
+        </head>
+      <body>
+        <p>This is a paragraph.</p>
+          <p>This is another paragraph. </p>
+        <p>This is <br /> a line break </p>
+      </body>
+    </html>
+```
+
+-
+#### Images
+* The image element has to required attributes: src and alt
+* "src" of Source attribute tells the browser what image goes in the tag and where to find it
+* "alt" or alternative text gives a description of the image and is needed on image tags if the image is not visible
+* Three type of image files are used in HTML: .jgp(JPEG), .gif(GIF), .png(PINGs)
+
+``` HTML
+          <img src="image.jpg" alt="Your image">
+```
+
+
+-
+-
+### Links
+* Links are defined in HTML with the <a> element
+* The "href" attribute defines the link's destination address
+* Three types of links that can be used in HTML:
+* Absolute, Relative, and Anchor
+
+
+-
+#### Absolute Links
+* The file path has to include the full URL (most commonly used for external site links).
+* Can be used to add in an image
+``` HTML
+						<a href="page.html">Link to a local page.</a>
+```
+``` HTML
+						<img src="image.jpg" height="300px" width="200px">
+```
+
+-
+#### Relative Links
+* The file path is relative to the index.html page’s location.
+* Can be used to add in an image
+``` HTML
+						<a href="www.google.com">Link to an external page.</a>
+```
+``` HTML
+						<img src="www.website.com/image.jpg" height="300px" width="200px">
+```
+-
+#### Anchor Links
+* You can tell the browser to go to a specific section of the page
+``` HTML
+						<a href="#projects">Link to a section on the page.</a>
+```
+
+-
+-
+#### Link Attributes
+* With certain attributes, links can open in a new tab or perform a special action, like opening the user’s default mail application.
+
+```HTML
+        <a href="www.google.com" target="_blank">Opens another tab</a>
+```
+```HTML
+		    <a href="mailto: email@youremail.com">Email Us!</a>
+```
 
 -
 -
 ## Lecture Summary
-* Topic 1 Summary
-* Topic 2 Summary
-* Topic 3 Summary
+* DOCTYPE : Tells the browser which version of the markup language the page is using
+* <html> : All content is contained within these open and closing tags
+* <head> : Contains the title and metadata information about the page. Not visible to the user.
+* <body> : Contain all the visible content of a webpage.
