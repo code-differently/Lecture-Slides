@@ -23,10 +23,10 @@
 * HTML is structured by nesting elements inside other elements. This is done by placing elements inside other containing tags.
 * For example, the <p> nested inside of the <body> tags is a “child” or a “descendent” of the body.
 ``` HTML
-						<body>
-							<p>A paragraph inside the body tag</p>
-						</body>
-						```
+<body>
+	<p>A paragraph inside the body tag</p>
+</body>
+```
 
 -
 #### The <html> tag
@@ -35,9 +35,9 @@
 * Everything in an HTML document is surrounded by <html> tag
 <br/>
 ```HTML
-    <!DOCTYPE html>
-      <html>
-      </html>
+<!DOCTYPE html>
+<html>
+</html>
 ```
 
 
@@ -49,12 +49,12 @@
 * Contains the title and metadata information about the page
 * Meta information is mostly invisible to the user, but has many purposes, like providing information to search engines.
 ```HTML
-    <!DOCTYPE html>
-      <html>
-        <head>
-          <title>My Page</title>
-        </head>
-      </html>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>My Page</title>
+    </head>
+  </html>
 ```      
 
 
@@ -69,15 +69,15 @@
 -
 -
 ``` HTML
-						<!DOCTYPE html>
-							<html>
-							  	<head>
-							    	<title>Title of the page</title>
-							  	</head>
-							  	<body>
-							    	The page content here.
-								</body>
-						</html>
+<!DOCTYPE html>
+	<html>
+	  	<head>
+	    	<title>Title of the page</title>
+	  	</head>
+	  	<body>
+	    	The page content here.
+		</body>
+</html>
 ```
 
 
@@ -86,12 +86,12 @@
 * HTML includes six levels of heading which are ranked according to importance, not size
 * These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
 ``` HTML
-						<h1>Written</h1>
-						<h2>In</h2>
-						<h3>Decreasing</h3>
-						<h4>Order</h4>
-						<h5>Of</h5>
-						<h6>Importance</h6>
+<h1>Written</h1>
+<h2>In</h2>
+<h3>Decreasing</h3>
+<h4>Order</h4>
+<h5>Of</h5>
+<h6>Importance</h6>
 ```
 
 -
@@ -100,25 +100,25 @@
 * <p>...</p>
 * The browser does not care about line breaks or tabs in your code. Use the <p> tag to split lines of text displayed on the page.
 ``` HTML
-						<body>
-							<p>A paragraph inside the body tag</p>
-						</body>
+<body>
+	<p>A paragraph inside the body tag</p>
+</body>
 ```
 
 -
 #### Horizonal Line Break
 * This element represents a sectional break between paragraphs. It can be used as an indicator when changing a subject within as section.
 ``` HTML
-      <html>
-        <head>
-          <title>first page</title>
-        </head>
-          <body>
-              <p>This is a paragraph.</p>
-              <hr>
-              <p>This is another paragraph. </p>
-          </body>
-      </html>
+<html>
+  <head>
+    <title>first page</title>
+  </head>
+    <body>
+        <p>This is a paragraph.</p>
+        <hr>
+        <p>This is another paragraph. </p>
+    </body>
+</html>
 ```
 
 -
@@ -126,16 +126,16 @@
 * Use the <br /> tag to add a single line of text without starting a new paragraph.
 * The <br /> element is an empty HTML element. It has no end tag.
 ```HTML
-    <html>
-      <head>
-          <title>first page</title>
-        </head>
-      <body>
-        <p>This is a paragraph.</p>
-          <p>This is another paragraph. </p>
-        <p>This is <br /> a line break </p>
-      </body>
-    </html>
+<html>
+  <head>
+      <title>first page</title>
+    </head>
+  <body>
+    <p>This is a paragraph.</p>
+      <p>This is another paragraph. </p>
+    <p>This is <br /> a line break </p>
+  </body>
+</html>
 ```
 
 -
@@ -146,7 +146,7 @@
 * Three type of image files are used in HTML: .jgp(JPEG), .gif(GIF), .png(PINGs)
 
 ``` HTML
-          <img src="image.jpg" alt="Your image">
+<img src="image.jpg" alt="Your image">
 ```
 
 
@@ -164,10 +164,10 @@
 * The file path has to include the full URL (most commonly used for external site links).
 * Can be used to add in an image
 ``` HTML
-						<a href="page.html">Link to a local page.</a>
+<a href="page.html">Link to a local page.</a>
 ```
 ``` HTML
-						<img src="image.jpg" height="300px" width="200px">
+<img src="image.jpg" height="300px" width="200px">
 ```
 
 -
@@ -175,16 +175,16 @@
 * The file path is relative to the index.html page’s location.
 * Can be used to add in an image
 ``` HTML
-						<a href="www.google.com">Link to an external page.</a>
+<a href="www.google.com">Link to an external page.</a>
 ```
 ``` HTML
-						<img src="www.website.com/image.jpg" height="300px" width="200px">
+<img src="www.website.com/image.jpg" height="300px" width="200px">
 ```
 -
 #### Anchor Links
 * You can tell the browser to go to a specific section of the page
 ``` HTML
-						<a href="#projects">Link to a section on the page.</a>
+<a href="#projects">Link to a section on the page.</a>
 ```
 
 -
@@ -193,10 +193,10 @@
 * With certain attributes, links can open in a new tab or perform a special action, like opening the user’s default mail application.
 
 ```HTML
-        <a href="www.google.com" target="_blank">Opens another tab</a>
+<a href="www.google.com" target="_blank">Opens another tab</a>
 ```
 ```HTML
-		    <a href="mailto: email@youremail.com">Email Us!</a>
+<a href="mailto: email@youremail.com">Email Us!</a>
 ```
 
 -
