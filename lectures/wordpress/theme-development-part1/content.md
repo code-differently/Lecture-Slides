@@ -67,6 +67,7 @@
 -
 ### quick tips
 * Use proper `DOCTYPE`
+* Add a call to `body_class()` to call the Wordpress body class.
 * Add a call to `wp_head()` before the closing `</head>` tag.
   * Plugins use this _action hook_ to add their own scripts, stylesheets, and other functionality.
 * Do not link the theme stylesheets in the Header template.
