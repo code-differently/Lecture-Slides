@@ -40,6 +40,7 @@
 * The following files should be created in the `My Theme` root directory.
   * `archive.php`
   * `footer.php`
+  * `front-page.php`
   * `header.php`
   * `index.php`
   * `page.php`
@@ -67,7 +68,7 @@
 -
 ### quick tips
 * Use proper `DOCTYPE`
-* Add a call to `body_class()` to call the Wordpress body class.
+* Add a call to `body_class()` to call to allow Wordpress to add its own classes to the body.
 * Add a call to `wp_head()` before the closing `</head>` tag.
   * Plugins use this _action hook_ to add their own scripts, stylesheets, and other functionality.
 * Do not link the theme stylesheets in the Header template.
@@ -149,6 +150,55 @@
 
 
 
+-
+-
+### `front-page.php`
+* file executed by Wordpress to generate _front page_ of theme
+
+
+-
+### What is a _front page_?
+* The front page should be the first page that is exposed to a client upon visiting a website
+* The front page should allow a client to navigate to any other part of the webservice.
+
+
+-
+### quick tips
+* blah
+
+
+
+-
+### Example Code
+```html
+<?php get_header();?>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				Left Side
+			</div>
+
+			<div class="col">
+				Right Side
+			</div>
+		</div>
+	</div>
+<?php get_footer();?>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,14 +206,12 @@
 -
 ### `index.php`
 * The main template. If your Theme provides its own templates, `index.php` must be present.
-* file executed by Wordpress to generate home page of theme
 * Displays a list of posts in excerpt or full-length form.
 
 
 -
 ### What is an _index_ page?
 * Displays a list of navigational options to the client
-* Think of the _home_ page
 
 
 -
@@ -334,3 +382,14 @@
 -
 ### Example
 * blah
+
+
+
+
+
+
+-
+-
+### Viewing changes
+* add content to `front-page.php`
+* navigate to `http://localhost:8888/wordpress/` to view changes.
