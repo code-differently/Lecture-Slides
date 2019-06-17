@@ -180,14 +180,7 @@
 * The file path is relative to the index.html page’s location.
 * Can be used to add in an image
 ``` HTML
-<<<<<<< HEAD
 						<a href="page.html">Link to a local page.</a>
-=======
-<a href="www.google.com">Link to an external page.</a>
-```
-``` HTML
-<img src="www.website.com/image.jpg" height="300px" width="200px">
->>>>>>> 5421efcc40f1992d94acda7bc25907a2637656b0
 ```
 
 -
