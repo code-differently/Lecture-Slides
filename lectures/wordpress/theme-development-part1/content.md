@@ -12,7 +12,6 @@
 ## Lecture Overview
 * Creating an empty theme
 * Creating base theme assets
-* Topic 3
 
 
 
@@ -52,7 +51,7 @@
 
 -
 -
-#### `header.php`
+### `header.php`
 * file executed by Wordpress to generate _header_ of theme
 
 
@@ -75,7 +74,7 @@
 
 
 -
-#### Example
+### Example
 
 ```html
 <!DOCTYPE html>
@@ -107,7 +106,7 @@
 
 -
 -
-#### `footer.php`
+### `footer.php`
 * file executed by Wordpress to generate _footer_ of theme
 
 
@@ -128,7 +127,7 @@
   * Plugins use this _action hook_ to add their own scripts, stylesheets, and other functionality.
 
 -
-#### Example
+### Example
 
 ```html
 <?php wp_footer(); ?>
@@ -154,7 +153,8 @@
 
 -
 -
-#### `index.php`
+### `index.php`
+* The main template. If your Theme provides its own templates, `index.php` must be present.
 * file executed by Wordpress to generate home page of theme
 * Displays a list of posts in excerpt or full-length form.
 
@@ -171,7 +171,7 @@
 
 
 -
-#### Example
+### Example
 ```html
 ```
 
@@ -196,32 +196,24 @@
 
 -
 -
-#### `archive.php`
+### `archive.php`
 * Display archive title (tag, category, date-based, or author archives).
 * Display a list of posts in excerpt or full-length form. Choose one or the other as appropriate.
 * Include `wp_link_pages()` to support navigation links within posts.
 
 
 -
-### What is an _index_ page?
-* Displays a list of navigational options to the client
-* Think of the _home_ page
+### What is an _archive_ page?
+* blah
 
 
 -
 ### quick tips
-* Include `wp_link_pages()` to support navigation links within posts.
-
+* blah
 
 -
-#### Example
-
-```html
-<?php wp_footer(); ?>
-</body>
-</html>
-```
-
+### Example
+* blah
 
 
 
@@ -243,7 +235,8 @@
 
 -
 -
-#### `archive.php`
+### `page.php`
+* The page template. Used when an individual Page is queried.
 * Display page title and page content.
 * Display comment list and comment form (unless comments are off).
 * Include `wp_link_pages()` to support navigation links within a page.
@@ -252,24 +245,21 @@
 
 
 -
-### What is an _index_ page?
-* Displays a list of navigational options to the client
-* Think of the _home_ page
+### What is an _archive_ page?
+* blah
 
 
 -
 ### quick tips
-* Include `wp_link_pages()` to support navigation links within posts.
-
+* blah
 
 -
-#### Example
+### Example
+* blah
 
-```html
-<?php wp_footer(); ?>
-</body>
-</html>
-```
+
+
+
 
 
 
@@ -296,32 +286,28 @@
 
 -
 -
-### Topic 3
-* Sub-topic 3A
-* Sub-topic 3B
-* Sub-topic 3C
+### `single.php`
+* The single post template.
+* Used when a single post is queried.
+* For this and all other query templates, `index.php` is used if the query template is not present.
 
+-
+### quick tips
+* Include `wp_link_pages()` to support navigation links within a post.
 
 
 -
-#### Sub-topic 3A
-* Discussion point 3A.1
-* Discussion point 3A.2
-* Discussion point 3A.3
+### Example
+* blah
 
 
--
-#### Sub-topic 3B
-* Discussion point 3B.1
-* Discussion point 3B.2
-* Discussion point 3B.3
 
 
--
-#### Sub-topic 3C
-* Discussion point 3C.1
-* Discussion point 3C.2
-* Discussion point 3C.3
+
+
+
+
+
 
 
 
@@ -337,7 +323,15 @@
 
 -
 -
-## Lecture Summary
-* Topic 1 Summary
-* Topic 2 Summary
-* Topic 3 Summary
+### `style.css`
+* The main stylesheet.
+* This must be included with your Theme, and it must contain the information header for your Theme.
+
+
+-
+### quick tips
+* blah
+
+-
+### Example
+* blah
