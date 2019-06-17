@@ -1,5 +1,5 @@
 # ICEBREAKER
-*Ultimate Rock Paper Scissors
+* Ultimate Rock Paper Scissors
 <br>
 <img src= "https://images.discordapp.net/avatars/421090818506358784/ad4a1fad288cf8d6471c067ef414cd53.png?size=512">
 

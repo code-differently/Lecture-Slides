@@ -10,8 +10,8 @@
 -
 -
 ## Lecture Overview
-* How to create an empty theme
-* What are the minimum assets?
+* Creating an empty theme
+* Creating base theme assets
 * Topic 3
 
 
@@ -29,15 +29,6 @@
 * Create `style.css` file in the `My Theme` root
 * Navigate to `http://localhost:8888/wordpress/wp-admin/themes.php`
 	* `My Theme` becomes an available theme
-
-
-
-
-
-
-
-
-
 
 
 
@@ -94,7 +85,8 @@
         <title><?php wp_title(); ?></title>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-        <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+        <?php if ( is_singular() && get_option('thread_comments'))
+                  wp_enqueue_script('comment-reply'); ?>
         <?php wp_head(); ?>
     </head>
 ```
@@ -103,19 +95,192 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 -
 -
 #### `footer.php`
-* Discussion point 2B.1
-* Discussion point 2B.2
-* Discussion point 2B.3
+* file executed by Wordpress to generate _footer_ of theme
 
 
 -
-#### Sub-topic 2C
-* Discussion point 2C.1
-* Discussion point 2C.2
-* Discussion point 2C.3
+### What is a _footer_?
+* The `<footer>` element represents a container for content at the _foot_ of the page.
+* A `<footer>` element typically contains:
+    * authorship information
+    * copyright information
+    * contact information
+    * sitemap
+    * _back to top_ links
+    * related documents
+
+-
+### quick tips
+* Use the `wp_footer()` call, to appear just before closing body tag.
+  * Plugins use this _action hook_ to add their own scripts, stylesheets, and other functionality.
+
+-
+#### Example
+
+```html
+<?php wp_footer(); ?>
+</body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
+-
+#### `index.php`
+* file executed by Wordpress to generate home page of theme
+* Displays a list of posts in excerpt or full-length form.
+
+
+-
+### What is an _index_ page?
+* Displays a list of navigational options to the client
+* Think of the _home_ page
+
+
+-
+### quick tips
+* Include `wp_link_pages()` to support navigation links within posts.
+
+
+-
+#### Example
+```html
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
+-
+#### `archive.php`
+* Display archive title (tag, category, date-based, or author archives).
+* Display a list of posts in excerpt or full-length form. Choose one or the other as appropriate.
+* Include `wp_link_pages()` to support navigation links within posts.
+
+
+-
+### What is an _index_ page?
+* Displays a list of navigational options to the client
+* Think of the _home_ page
+
+
+-
+### quick tips
+* Include `wp_link_pages()` to support navigation links within posts.
+
+
+-
+#### Example
+
+```html
+<?php wp_footer(); ?>
+</body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
+-
+#### `archive.php`
+* Display page title and page content.
+* Display comment list and comment form (unless comments are off).
+* Include `wp_link_pages()` to support navigation links within a page.
+* Metadata such as tags, categories, date and author should not be displayed.
+* Display an "Edit" link for logged-in users with edit permissions.
+
+
+-
+### What is an _index_ page?
+* Displays a list of navigational options to the client
+* Think of the _home_ page
+
+
+-
+### quick tips
+* Include `wp_link_pages()` to support navigation links within posts.
+
+
+-
+#### Example
+
+```html
+<?php wp_footer(); ?>
+</body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
