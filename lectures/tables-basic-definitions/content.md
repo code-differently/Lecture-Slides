@@ -15,7 +15,7 @@
 -
 ### Defining a Table
 * Tables are a way to represent information in a grid format
-* They are made up of rows and columns
+*
 * Defined by the <table> with opening and closing tags
 
 ```html
