@@ -21,10 +21,10 @@
 
 -
 -
-### How to create wordpress themes
+### Creating an empty theme
 1. Navigate to the `wp-content` directory from the `wordpress` root.
 * Create a new folder whose name is the new theme name (i.e. `My Theme`)
-* Create an `index.php` file in the `My Theme` root.
+* Create an `index.php` f ile in the `My Theme` root.
 * Create `style.css` file in the `My Theme` root
 * Navigate to `http://localhost:8888/wordpress/wp-admin/themes.php`
 	* `My Theme` becomes an available theme
@@ -290,7 +290,7 @@
 
 
 -
-### What is an _page_?
+### What is a _page_?
 * Displays title and content.
 
 
