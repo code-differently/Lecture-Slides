@@ -33,7 +33,7 @@
 * Like a sandwich, the HTML document has open and closing tags
 * <html>...</html>
 * Everything in an HTML document is surrounded by <html> tag
-<br/>
+
 ```HTML
 <!DOCTYPE html>
 <html>
@@ -66,8 +66,6 @@
 * Holds the visible content of a webpage
 * Headings, paragraphs, lists, quotes, images, and links are just a few of the elements that can be contained within the body tag.
 
--
--
 ``` HTML
 <!DOCTYPE html>
 	<html>
@@ -99,6 +97,7 @@
 * This element, with open and closing tags, will allow you to create paragraphs.
 * <p>...</p>
 * The browser does not care about line breaks or tabs in your code. Use the <p> tag to split lines of text displayed on the page.
+
 ``` HTML
 <body>
 	<p>A paragraph inside the body tag</p>
@@ -107,7 +106,8 @@
 
 -
 #### Horizonal Line Break
-* This element represents a sectional break between paragraphs. It can be used as an indicator when changing a subject within as section.
+* This element represents a sectional break between paragraphs. It can be used as an indicator when changing a subject within as section. <hr>
+
 ``` HTML
 <html>
   <head>
@@ -143,7 +143,7 @@
 * The image element has to required attributes: src and alt
 * "src" of Source attribute tells the browser what image goes in the tag and where to find it
 * "alt" or alternative text gives a description of the image and is needed on image tags if the image is not visible
-* Three type of image files are used in HTML: .jgp(JPEG), .gif(GIF), .png(PINGs)
+* Three type of image files are used in HTML: .jpg(JPEG), .gif(GIF), .png(PINGs)
 
 ``` HTML
 <img src="image.jpg" alt="Your image">
@@ -162,16 +162,10 @@
 -
 #### Absolute Links
 * The file path has to include the full URL (most commonly used for external site links).
-* Can be used to add in an image
+
+
 ``` HTML
-<<<<<<< HEAD
-						<a href="www.google.com">Link to a local page.</a>
-=======
-<a href="page.html">Link to a local page.</a>
-```
-``` HTML
-<img src="image.jpg" height="300px" width="200px">
->>>>>>> 5421efcc40f1992d94acda7bc25907a2637656b0
+		<a href="www.google.com">Link to an external page.</a>
 ```
 
 
@@ -179,15 +173,17 @@
 #### Relative Links
 * The file path is relative to the index.html page’s location.
 * Can be used to add in an image
+
 ``` HTML
-						<a href="page.html">Link to a local page.</a>
+		<a href="page.html">Link to a local page.</a>
 ```
 
 -
 #### Anchor Links
 * You can tell the browser to go to a specific section of the page
+
 ``` HTML
-<a href="#projects">Link to a section on the page.</a>
+		<a href="#projects">Link to a section on the page.</a>
 ```
 
 -
