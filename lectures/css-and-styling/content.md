@@ -151,15 +151,71 @@ There are three ways to insert CSS
   <h1 style="font-size: 48px;">My headline</h1>
 ```
 
+-
+-
+### CSS Specificity
+* If two CSS selectors apply to the same element, the one with higher specificity wins
+* There are 4 categories which define the specificity level of a selector
+* Each category has a certain number of points
 
 
+-
+#### Inline styles
+* An inline style is directly attached to the element that is styled
+* Has a value of 1000 points
+
+```HTML
+  <h1 style="color: #ffffff;">
+```
+
+-
+#### IDs
+* A unique identifier for the page elements using (#)
+* Has a value of 100 points
+
+```CSS
+  #headshot {
+    background: green;
+    border: 1px solid red;
+  }
+```
+
+-
+#### Classes, attributes, and pseudo-classes
+* This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.
+* Has a value of 10 points
+
+```CSS
+  .project{
+  font-family: Tahoma;
+  font color: #4F0E42;
+  }
+```
+```CSS
+  a:hover{
+  color: purple;
+  }
+```
+
+-
+#### Elements and pseudo-elements
+* This includes element names and pseudo-elements, such as h1, div, :before and :after.
+* Has a value of 1 point
+
+```CSS
+  h2{
+  font-family: Comic Sans, sans-serif;
+  font color: #DFAEB4;
+  }
+```
+
+-
+#### Specificity Chart
+<img src="specificity-chart.png">
 
 
-
-
-
-
-
+-
+-
 
 
 -
