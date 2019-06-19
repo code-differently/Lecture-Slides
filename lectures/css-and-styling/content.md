@@ -1,116 +1,155 @@
-# Title of Lecture
+# CSS and Styling
 
 
 
 -
 -
 ## Lecture Overview
-* Topic 1
-* Topic 2
-* Topic 3
-
+* What is CSS?
+* CSS Syntax
+* How to insert CSS
+*
 
 
 
 -
 -
-### Topic 1
-* Sub-topic 1A
-* Sub-topic 1B
-* Sub-topic 1C
+### What is CSS and why do we use it?
+* CSS stands for Cascading Style Sheets. They are stored in external CSS files
+* CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+* CSS saves a lot of work. It can control the layout of multiple web pages all at once
+
+
 
 -
-#### Sub-topic 1A
-* Discussion point 1A.1
-* Discussion point 1A.2
+-
+### CSS Syntax
+
+<img src="css-syntax.png">
+
+* CSS selectors points to the HTML elements you want to style
+* A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces
+* A property indicates which stylistic features you want to change. Ex: Font, width, background color
+* A value indicated how you want to change the stylistic feature
 * Discussion point 1A.3
 
 
 -
-#### Sub-topic 1B
-* Discussion point 1B.1
-* Discussion point 1B.2
-* Discussion point 1B.3
+#### CSS Selectors
+* CSS selectors are used to select HTML elements based on their element name, id, class, attribute, and more
 
 
 -
-#### Sub-topic 1C
-* Discussion point 1C.1
-* Discussion point 1C.2
-* Discussion point 1C.3
+#### Element Selectors
+* The element selector selects elements based on the element name
+* The code below selects all <p> elements on a page and makes them center aligned and red
+
+```CSS
+  p {
+    text-align: center;
+    color: yellow;
+  }
+```
+
+-
+#### Id Selectors
+* The id selector uses the id attribute of an HTML element to select a specific element
+* The id of an element should be unique within a page, so the id selector is used to select one element
+* Use a hash (#) followed by the id of the element
+
+```CSS
+  #headshot {
+    background: green;
+    border: 1px solid red;
+  }
+```
 
 
+-
+#### Class Selectors
+* The class selector selects elements with a specific class attribute
+* Use a period (.) character, followed by the name of the class
+* Can appear multiple times within a page, unlike id selectors which only appear once
 
+```CSS
+  .projects {
+    text-align: center;
+  }
+```
+
+
+-
+#### Grouping Selectors
+* If you have multiple elements with the same style, you can group the selectors with a comma
+* This helps to minimize code
+
+```CSS
+  h1, h2, p {
+  text-align: center;
+  color: red;
+  }
+```
+
+-
+#### Descendent Selectors
+* Descendent selectors (or descendent combinator) allow you to combine two or more selectors so you can be more specific
+* Elements matched by the second selector are selected if they have an ancestor element matching the first selector
+* This relationship is created with a space between selectors
+
+```CSS
+  ul li {
+    margin: 10px;
+  }
+```
 
 
 -
 -
-### Topic 2
-* Sub-topic 2A
-* Sub-topic 2B
-* Sub-topic 2C
+### How to insert CSS
 
--
-#### Sub-topic 2A
-* Discussion point 2A.1
-* Discussion point 2A.2
-* Discussion point 2A.3
+There are three ways to insert CSS
+* External Style Sheet
+* Internal Style Sheet
+* Inline style
 
 
 -
-#### Sub-topic 2B
-* Discussion point 2B.1
-* Discussion point 2B.2
-* Discussion point 2B.3
+#### External Style Sheet
+* Able to change the look of a page with just one file
+* Each page must include a reference to the external style sheet file inside the <link> element. The <link> element goes inside the <head> section
+* The style sheet file must be saved with a .css extension.
+* Easy to maintain and saves time
 
-
--
-#### Sub-topic 2C
-* Discussion point 2C.1
-* Discussion point 2C.2
-* Discussion point 2C.3
-
-
-
-
-
-
-
-
-
-
-
-
+```HTML
+  <head>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+```
 
 -
--
-### Topic 3
-* Sub-topic 3A
-* Sub-topic 3B
-* Sub-topic 3C
+#### Internal Style Sheet
+* An internal stylesheet holds the CSS code for the webpage in the <head> section of the particular file
+* Only affects the page the code is inserted into
+* Not reusable
 
-
-
--
-#### Sub-topic 3A
-* Discussion point 3A.1
-* Discussion point 3A.2
-* Discussion point 3A.3
-
-
--
-#### Sub-topic 3B
-* Discussion point 3B.1
-* Discussion point 3B.2
-* Discussion point 3B.3
-
+```HTML
+  <head>
+    <style>
+        body { background-color: blue; }
+        p { color: white; }
+    </style>
+  </head>
+```
 
 -
-#### Sub-topic 3C
-* Discussion point 3C.1
-* Discussion point 3C.2
-* Discussion point 3C.3
+#### Inline Style
+* The inline style is added as an HTML attribute
+* Good for an individual CSS change that you do not use repeatedly throughout the site
+* This is not a recommended approach
 
+```HTML
+  <h1 style="font-size: 48px;">My headline</h1>
+```
 
 
 
