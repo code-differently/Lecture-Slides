@@ -106,7 +106,7 @@
 quickPink { color: pink; font-weight: bold; };
 ```
 
-* Above is a css example, p is the "selector" -   the part of css code specifying which html elements the css styling will effect
+* Above is a css example, quickPink is the "selector" -   the part of css code specifying which html elements the css styling will effect
 
 -
 ### Example
