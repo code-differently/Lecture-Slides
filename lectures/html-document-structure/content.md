@@ -164,14 +164,10 @@
 * The file path has to include the full URL (most commonly used for external site links).
 * Can be used to add in an image
 ``` HTML
-<<<<<<< HEAD
-						<a href="www.google.com">Link to a local page.</a>
-=======
 <a href="page.html">Link to a local page.</a>
 ```
 ``` HTML
 <img src="image.jpg" height="300px" width="200px">
->>>>>>> 5421efcc40f1992d94acda7bc25907a2637656b0
 ```
 
 
