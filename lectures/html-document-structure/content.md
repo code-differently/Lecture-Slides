@@ -43,9 +43,9 @@
 
 -
 -
-#### The <head> tag
+#### The `<head>` tag
 * Follows the <html> tag and has open and closing tags
-* <head>...</head>
+* `<head>...</head>`
 * Contains the title and metadata information about the page
 * Meta information is mostly invisible to the user, but has many purposes, like providing information to search engines.
 ```HTML
@@ -60,9 +60,9 @@
 
 -
 -
-### The <body> tag
+### The `<body>` tag
 * Follows the <head> tag and has open and closing tags
-* <body>...</body>
+* `<body>...</body>`
 * Holds the visible content of a webpage
 * Headings, paragraphs, lists, quotes, images, and links are just a few of the elements that can be contained within the body tag.
 
