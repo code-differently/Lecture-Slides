@@ -29,9 +29,9 @@
 ```
 
 -
-#### The <html> tag
+#### The `<html>` tag
 * Like a sandwich, the HTML document has open and closing tags
-* <html>...</html>
+* `<html>...</html>`
 * Everything in an HTML document is surrounded by <html> tag
 
 ```HTML
