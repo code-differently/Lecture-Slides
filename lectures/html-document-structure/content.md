@@ -82,7 +82,7 @@
 -
 #### Headings
 * HTML includes six levels of heading which are ranked according to importance, not size
-* These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
+* These are `<h1>, <h2>, <h3>, <h4>, <h5>, and <h6>`.
 ``` HTML
 <h1>Written</h1>
 <h2>In</h2>
@@ -95,8 +95,8 @@
 -
 #### Paragraphs
 * This element, with open and closing tags, will allow you to create paragraphs.
-* <p>...</p>
-* The browser does not care about line breaks or tabs in your code. Use the <p> tag to split lines of text displayed on the page.
+* `<p>...</p>`
+* The browser does not care about line breaks or tabs in your code. Use the `<p>`tag to split lines of text displayed on the page.
 
 ``` HTML
 <body>
@@ -106,7 +106,7 @@
 
 -
 #### Horizonal Line Break
-* This element represents a sectional break between paragraphs. It can be used as an indicator when changing a subject within as section. <hr>
+* This element represents a sectional break between paragraphs. It can be used as an indicator when changing a subject within as section. `<hr>`
 
 ``` HTML
 <html>
@@ -123,8 +123,8 @@
 
 -
 #### Single Line Break     
-* Use the <br /> tag to add a single line of text without starting a new paragraph.
-* The <br /> element is an empty HTML element. It has no end tag.
+* Use the `<br />` tag to add a single line of text without starting a new paragraph.
+* The `<br />` element is an empty HTML element. It has no end tag.
 ```HTML
 <html>
   <head>
@@ -203,5 +203,5 @@
 ## Lecture Summary
 * DOCTYPE : Tells the browser which version of the markup language the page is using
 * Nesting : The placement of elements inside of other containing tags
-* <body> : Contains all the visible content of a webpage. What elements can be contained inside of the body tag?
+* `<body>` : Contains all the visible content of a webpage. What elements can be contained inside of the body tag?
 * Links : Three different types of links. Relative, Absolute, and Anchor
