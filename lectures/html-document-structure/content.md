@@ -140,7 +140,7 @@
 
 -
 #### Images
-* The image element has to required attributes: src and alt
+* The image element has two required attributes: src and alt
 * "src" of Source attribute tells the browser what image goes in the tag and where to find it
 * "alt" or alternative text gives a description of the image and is needed on image tags if the image is not visible
 * Three type of image files are used in HTML: .jpg(JPEG), .gif(GIF), .png(PINGs)
