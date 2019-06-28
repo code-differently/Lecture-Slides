@@ -320,15 +320,56 @@ There are three ways to insert CSS
 
 
 -
-####
+#### Color
+* The color property is used to set the color of the text
+* Colors in CSS can be specified using
+  * a color name - `red`
+  * a HEX value - `#ff0000`
+  * an RGB or RGBA value - `rgb(255)`
 
-
-
+```CSS
+ p {color: red;}
+```
 
 
 -
+#### Background-Color
+* The background-color property changes the color of the Background
+
+```CSS
+    p {
+    background-color: black;
+    background-color: #000000;
+    background-color: rgba(0,0,0);
+    }
+```
+
+
 -
-## Lecture Summary
-* Topic 1 Summary
-* Topic 2 Summary
-* Topic 3 Summary
+#### Text-Align
+* The text-align property is used to set the horizontal alignment of a text
+* Text can be left or right aligned, centered, or justify
+* When the text-align property is set to "justify", each line is stretched so that every line has equal width and the left and right margins are straight. Similar to magazines and newspapers
+
+```CSS
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    div {
+        text-align: justify;
+    }
+```
+
+-
+-
+### A list of all the CSS properties
+* https://css-tricks.com/almanac/properties/
