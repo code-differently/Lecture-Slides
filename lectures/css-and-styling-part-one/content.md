@@ -6,9 +6,9 @@
 -
 ## Lecture Overview
 * What is CSS?
-* CSS Syntax
 * How to insert CSS
-* Specifying Fonts and Font Sizes
+* How CSS is applied
+* Styling with Fonts, Color, and Size
 
 
 
@@ -23,8 +23,7 @@
 
 
 -
--
-### CSS Syntax
+#### CSS Syntax
 
 <img src="css-syntax.png">
 
@@ -91,6 +90,7 @@
   }
 ```
 
+
 -
 #### Descendent Selectors
 * Descendent selectors (or descendent combinator) allow you to combine two or more selectors so you can be more specific
@@ -152,9 +152,59 @@ There are three ways to insert CSS
   <h1 style="font-size: 48px;">My headline</h1>
 ```
 
+
+
 -
 -
-### CSS Specificity
+### How CSS is applied
+* There are a few rules that determine how styles are applied to your HTML
+* They all work together and can be combined in interesting ways
+
+
+-
+#### Cascading
+* Styles are read from top to bottom in the stylesheet
+* The lowest style "wins"
+
+```CSS
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    p {
+      color: blue;
+    }
+```
+```HTML
+    <p>I’m blue, 18px, and bold.</p>
+```
+
+
+-
+#### Inheritance
+* Some styles are passed from parent to children
+
+```CSS
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    span {
+      font-style: italic;
+    }
+```
+```HTML
+<p>I’m red, 18px, and bold.
+  <span>I am those and also italic.</span>
+</p>
+```
+
+-
+#### CSS Specificity
 * If two CSS selectors apply to the same element, the one with higher specificity wins
 * There are 4 categories which define the specificity level of a selector
 * Each category has a certain number of points
@@ -171,7 +221,7 @@ There are three ways to insert CSS
 
 -
 #### IDs
-* A unique identifier for the page elements using (#)
+* An unique identifier for the page elements using (#)
 * Has a value of 100 points
 
 ```CSS
@@ -217,8 +267,8 @@ There are three ways to insert CSS
 
 -
 
-### Font and Font Sizes
-* The CSS font properties define the font family, boldness, size, and the style of text
+### CSS Styiling with Fonts, Size, and Colors
+* Various fonts, sizes, and colors can be used through CSS to style your HTML web page
 
 
 -
@@ -267,6 +317,15 @@ There are three ways to insert CSS
       font: italic bold 12px "Arial", sans-serif;
     }
 ```
+
+
+-
+####
+
+
+
+
+
 -
 -
 ## Lecture Summary
