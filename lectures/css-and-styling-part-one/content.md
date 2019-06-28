@@ -8,7 +8,8 @@
 * What is CSS?
 * CSS Syntax
 * How to insert CSS
-*
+* Specifying Fonts and Font Sizes
+
 
 
 
@@ -42,7 +43,7 @@
 -
 #### Element Selectors
 * The element selector selects elements based on the element name
-* The code below selects all <p> elements on a page and makes them center aligned and red
+* The code below selects all '<p>' elements on a page and makes them center aligned and red
 
 ```CSS
   p {
@@ -116,7 +117,7 @@ There are three ways to insert CSS
 -
 #### External Style Sheet
 * Able to change the look of a page with just one file
-* Each page must include a reference to the external style sheet file inside the <link> element. The <link> element goes inside the <head> section
+* Each page must include a reference to the external style sheet file inside the '<link>' element. The '<link>' element goes inside the '<head>' section
 * The style sheet file must be saved with a .css extension.
 * Easy to maintain and saves time
 
@@ -182,7 +183,7 @@ There are three ways to insert CSS
 
 -
 #### Classes, attributes, and pseudo-classes
-* This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.
+* This category includes .classes, '[attributes]' and pseudo-classes such as :hover, :focus etc.
 * Has a value of 10 points
 
 ```CSS
@@ -211,13 +212,61 @@ There are three ways to insert CSS
 
 -
 #### Specificity Chart
+
 <img src="specificity-chart.png">
 
-
--
 -
 
+### Font and Font Sizes
+* The CSS font properties define the font family, boldness, size, and the style of text
 
+
+-
+#### Font-family
+* The font-family property assigns a font to the specified element(s)
+* Generic family is a group of font families with a similar look
+* Font family is a specific font family. The property should hold several font names as a fallback system if the browser does not support the first font.
+
+```CSS
+  body {
+  /* A font family name and a generic family name */
+  font-family: "Arial", sans-serif;
+  font-family: "Times New Roman", serif;
+
+  /* A generic family name */
+  font-family: serif;
+  }
+```
+
+#### Difference Between Serif and Sans-serif
+<img src="sans-serif.png">
+
+
+-
+#### Font-Size
+* font-size sets the size of the font
+* 12- 14px is recommended for the body text accessibility
+
+```CSS
+    p {
+     /* <length> values */
+     font-size: 12px;
+
+     /* <percentage> values */
+     font-size: 80%;
+    }
+```
+
+-
+#### Font
+* The font property is shorthand for font-style, font-variant, font-weight, font-size, and font-family
+* Shorthand properties allow you to set multiple values with one declaration
+
+```CSS
+    p {
+      font: italic bold 12px "Arial", sans-serif;
+    }
+```
 -
 -
 ## Lecture Summary
