@@ -72,7 +72,7 @@
 * Add a call to `wp_head()` before the closing `</head>` tag.
   * Plugins use this _action hook_ to add their own scripts, stylesheets, and other functionality.
 * Do not link the theme stylesheets in the Header template.
-  * Use the `wp_enqueue_scripts` action hook in a theme function instead.
+  * Use the `wp_enqueue_scripts` action hook in a theme function insGinger Aled.
 
 
 -
