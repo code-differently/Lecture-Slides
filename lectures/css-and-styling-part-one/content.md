@@ -265,8 +265,9 @@ There are three ways to insert CSS
 
 <img src="specificity-chart.png">
 
--
 
+-
+-
 ### CSS Styiling with Fonts, Size, and Colors
 * Various fonts, sizes, and colors can be used through CSS to style your HTML web page
 
@@ -288,6 +289,7 @@ There are three ways to insert CSS
   }
 ```
 
+-
 #### Difference Between Serif and Sans-serif
 <img src="sans-serif.png">
 

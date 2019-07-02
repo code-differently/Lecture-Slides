@@ -2,18 +2,13 @@
 
 
 
-
-
-
-
-
 -
 -
 ## Lecture Overview
 * HTML forms are used to collect information from the user
 * The '<form>' element  with opening and closing tags
 * An HTML form contains different types of input elements.
-* Use
+
 
 ```HTML
   <body>
@@ -120,25 +115,21 @@
 ```
 
 
-
+-
 -
 ### The Target Attribute
 * Specifies if the submitted result will open in a new browser tab or in the current window
-* A value of "_self" means the form will be submitted in the current window
-
-
-
-
-
-
-
-
-
+* A value of ''"_self"' means the form will be submitted in the current window. Having a value of '"_blank"' will make the form result open in a new browser tab
 
 
 -
 -
-## Lecture Summary
-* Topic 1 Summary
-* Topic 2 Summary
-* Topic 3 Summary
+### The Method Attribute
+* This attribute specifies the HTTP method (GET or POST) to be used with submitting form data
+
+```HTML
+  <form action="/action_page.php" method="get">
+```
+```HTML
+  <form action="/action_page.php" method="post">
+```
