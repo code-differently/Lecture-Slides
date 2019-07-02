@@ -26,8 +26,8 @@
 
 
 ### Naming the Table
-* Defining the name of the table is done using the <caption> opening and closing tags
-* The <caption> tag must be inserted immediately after the <table> tags
+* Defining the name of the table is done using the `<caption>` opening and closing tags
+* The <caption> tag must be inserted immediately after the `<table>` tags
 * There can only ONE <caption> tag specified
 
 ```html
@@ -41,8 +41,8 @@
 -
 ### Creating and Naming Columns
 * Tables are divided into as many rows needed for your data purposes
-* Rows are created using the <tr> opening and closing tags
-* Rows are named using the table header <th> opening and closing tags
+* Rows are created using the `<tr>` opening and closing tags
+* Rows are named using the table header `<th>` opening and closing tags
 
 ```html
     <table>
@@ -100,6 +100,6 @@
 -
 -
 ## Lecture Summary
-* Defining a table using the <table> opening and closing tags and using the <caption> tags to name the table
-* Rows are created with the <tr> tags
+* Defining a table using the `<table>` opening and closing tags and using the <caption> tags to name the table
+* Rows are created with the `<tr>` tags
 * Columns are created with the <td> tags and are named using the <th> tags

@@ -119,7 +119,7 @@
 -
 ### The Target Attribute
 * Specifies if the submitted result will open in a new browser tab or in the current window
-* A value of ''"_self"' means the form will be submitted in the current window. Having a value of '"_blank"' will make the form result open in a new browser tab
+* A value of "_self" means the form will be submitted in the current window. Having a value of "_blank" will make the form result open in a new browser tab
 
 
 -
@@ -133,3 +133,14 @@
 ```HTML
   <form action="/action_page.php" method="post">
 ```
+
+-
+#### When to use GET
+* This is the default method when submitting form data
+* Submitted form data will be visible in the page address field
+* `/action_page.php?firstname=Leon&lastname=Hunter`
+* GET is better for non-secure data
+
+
+-
+#### When to use POST
