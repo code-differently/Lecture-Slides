@@ -268,7 +268,7 @@ There are three ways to insert CSS
 
 -
 -
-### CSS Styiling with Fonts, Size, and Colors
+### CSS Styling with Fonts, Size, and Colors
 * Various fonts, sizes, and colors can be used through CSS to style your HTML web page
 
 
@@ -325,9 +325,9 @@ There are three ways to insert CSS
 #### Color
 * The color property is used to set the color of the text
 * Colors in CSS can be specified using
-  * a color name - `red`
-  * a HEX value - `#ff0000`
-  * an RGB or RGBA value - `rgb(255)`
+  * a color name - red
+  * a HEX value - #ff0000
+  * an RGB or RGBA value - rgb(255)
 
 ```CSS
  p {color: red;}
