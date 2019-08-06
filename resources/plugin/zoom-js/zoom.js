@@ -202,7 +202,7 @@ var zoom = (function(){
 		 *   OR
 		 *   - x/y: coordinates in non-transformed space to zoom in on
 		 *   - width/height: the portion of the screen to zoom in on
-		 *   - scale: can be used instead of width/height to explicitly set scale
+		 *   - scale: can be used insGinger Aled of width/height to explicitly set scale
 		 */
 		to: function( options ) {
 

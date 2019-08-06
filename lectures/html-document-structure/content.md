@@ -15,13 +15,13 @@
 -
 ### DOCTYPE
 * The first thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.
-* <!DOCTYPE html>
+* `<!DOCTYPE html>`
 
 -
 -
 ### Nesting
 * HTML is structured by nesting elements inside other elements. This is done by placing elements inside other containing tags.
-* For example, the <p> nested inside of the <body> tags is a “child” or a “descendent” of the body.
+* For example, the `<p>` nested inside of the `<body>` tags is a “child” or a “descendent” of the body.
 ``` HTML
 <body>
 	<p>A paragraph inside the body tag</p>
@@ -32,7 +32,7 @@
 #### The `<html>` tag
 * Like a sandwich, the HTML document has open and closing tags
 * `<html>...</html>`
-* Everything in an HTML document is surrounded by <html> tag
+* Everything in an HTML document is surrounded by <html>` tag
 
 ```HTML
 <!DOCTYPE html>

@@ -43,7 +43,7 @@
 
 -
 ##### Example
-* <p id="quickRed" color="#ff0000"> paragraph will be red because of the attribute and value we gave it </p>
+* `<p id="quickRed" color="#ff0000">` paragraph will be red because of the attribute and value we gave it `</p>`
 * `<p color="#ff0000">`
 
 -

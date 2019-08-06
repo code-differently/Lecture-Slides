@@ -1,114 +1,131 @@
-# Title of Lecture
+# Lists
 
 
 -
 -
 ## Lecture Overview
-* Topic 1
-* Topic 2
-* Topic 3
+* Unordered Lists
+* Ordered Lists
+* Definition Lists
 
 
 -
 -
-### Topic 1
-* Sub-topic 1A
-* Sub-topic 1B
-* Sub-topic 1C
+### Unordered Lists
+* Unordered lists show up by default with bullets and have opening and closing tags, `<ul></ul>`
+* Each list item starts with the `<li>` tag and ends with `</li>`
+
+```HTML
+    <ul>
+       <li>Order</li>
+       <li>Doesn’t</li>
+       <li>Matter</li>
+    </ul>
+```
+-
+#### Styling of the Item Marker
+* The CSS list-style-type property is used to define the style of the list item marker
+* Three different styles to choose: discs (bullets), circle (empty circle), and square (solid square)
 
 -
-#### Sub-topic 1A
-* Discussion point 1A.1
-* Discussion point 1A.2
-* Discussion point 1A.3
-
-
--
-#### Sub-topic 1B
-* Discussion point 1B.1
-* Discussion point 1B.2
-* Discussion point 1B.3
-
-
--
-#### Sub-topic 1C
-* Discussion point 1C.1
-* Discussion point 1C.2
-* Discussion point 1C.3
-
-
-
-
+#### Discs (bullets)
+```HTML
+  <ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Ginger Ale</li>
+    <li>Capri Sun</li>
+  </ul>
+```
 
 
 -
--
-### Topic 2
-* Sub-topic 2A
-* Sub-topic 2B
-* Sub-topic 2C
-
--
-#### Sub-topic 2A
-* Discussion point 2A.1
-* Discussion point 2A.2
-* Discussion point 2A.3
-
-
--
-#### Sub-topic 2B
-* Discussion point 2B.1
-* Discussion point 2B.2
-* Discussion point 2B.3
-
-
--
-#### Sub-topic 2C
-* Discussion point 2C.1
-* Discussion point 2C.2
-* Discussion point 2C.3
-
-
-
-
-
-
-
+#### Circles (empty)
+```HTML
+  <ul style="list-style-type:circle;">
+    <li>Coffee</li>
+    <li>Ginger Ale</li>
+    <li>Capri Sun</li>
+  </ul>
+```
 
 
 -
 -
-### Topic 3
-* Sub-topic 3A
-* Sub-topic 3B
-* Sub-topic 3C
+### Ordered Lists
+* An ordered list begins with the opening tag `<ol>` and ends with the closing tag '</ol>'
+* List items will be by default marked with numbers and will be within the  list item opening and closing tags '<li></li>'
+
+```HTML
+  <ol>
+    <li>Coffee</li>
+    <li>Ginger Ale</li>
+    <li>Capri Sun</li>
+  </ol>
+```
+-
+#### Styling of the Item Markers
+* The type attribute of the `<ol>` tag, specifies the type of the list item marker
+* List items can be numbered with numbers (default), uppercase and lowercase letters, and lowercase and uppercase roman numerals.
+
+
+-
+#### Numbers
+```HTML
+  <ol type="1">
+    <li>Coffee</li>
+    <li>Ginger Ale</li>
+    <li>Capri Sun</li>
+  </ol>
+```
+
+
+-
+#### Uppercase Letters
+```HTML
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Ginger Ale</li>
+    <li>Capri Sun</li>
+  </ol>
+```
 
 
 
 -
-#### Sub-topic 3A
-* Discussion point 3A.1
-* Discussion point 3A.2
-* Discussion point 3A.3
+#### Uppercase Roman Numerals
+```HTML
+    <ol type="I">
+      <li>Coffee</li>
+      <li>Ginger Ale</li>
+      <li>Capri Sun</li>
+    </ol>
+```
 
 
 -
-#### Sub-topic 3B
-* Discussion point 3B.1
-* Discussion point 3B.2
-* Discussion point 3B.3
+#### Lowercase Roman Numerals
+```HTML
+    <ol type="i">
+      <li>Coffee</li>
+      <li>Ginger Ale</li>
+      <li>Capri Sun</li>
+    </ol>
+```
+
+
 
 
 -
-#### Sub-topic 3C
-* Discussion point 3C.1
-* Discussion point 3C.2
-* Discussion point 3C.3
-
-
 -
--
-## Lecture Summary
-* Topic 1 Summary
-* Topic 2 Summary
-* Topic 3 Summary
+### Definition Lists
+* A definition list is a list of terms, with a description of each term
+* The `<dl>` tag specifies the definition list, the `<dt>` tag specifies the term or name, and the `<dd>` tag describes each term
+
+```HTML
+    <dl>
+      <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+      <dt>Capri Sun</dt>
+        <dd>- clear cold fruity drink</dd>
+    </dl>
+```

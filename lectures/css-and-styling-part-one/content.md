@@ -1,4 +1,4 @@
-# CSS and Styling
+# CSS and Styling (Part One)
 
 
 
@@ -6,9 +6,10 @@
 -
 ## Lecture Overview
 * What is CSS?
-* CSS Syntax
 * How to insert CSS
-*
+* How CSS is applied
+* Styling with Fonts, Color, and Size
+
 
 
 
@@ -22,8 +23,7 @@
 
 
 -
--
-### CSS Syntax
+#### CSS Syntax
 
 <img src="css-syntax.png">
 
@@ -42,7 +42,7 @@
 -
 #### Element Selectors
 * The element selector selects elements based on the element name
-* The code below selects all <p> elements on a page and makes them center aligned and red
+* The code below selects all '<p>' elements on a page and makes them center aligned and red
 
 ```CSS
   p {
@@ -90,6 +90,7 @@
   }
 ```
 
+
 -
 #### Descendent Selectors
 * Descendent selectors (or descendent combinator) allow you to combine two or more selectors so you can be more specific
@@ -116,7 +117,7 @@ There are three ways to insert CSS
 -
 #### External Style Sheet
 * Able to change the look of a page with just one file
-* Each page must include a reference to the external style sheet file inside the <link> element. The <link> element goes inside the <head> section
+* Each page must include a reference to the external style sheet file inside the '<link>' element. The '<link>' element goes inside the '<head>' section
 * The style sheet file must be saved with a .css extension.
 * Easy to maintain and saves time
 
@@ -151,9 +152,59 @@ There are three ways to insert CSS
   <h1 style="font-size: 48px;">My headline</h1>
 ```
 
+
+
 -
 -
-### CSS Specificity
+### How CSS is applied
+* There are a few rules that determine how styles are applied to your HTML
+* They all work together and can be combined in interesting ways
+
+
+-
+#### Cascading
+* Styles are read from top to bottom in the stylesheet
+* The lowest style "wins"
+
+```CSS
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    p {
+      color: blue;
+    }
+```
+```HTML
+    <p>I’m blue, 18px, and bold.</p>
+```
+
+
+-
+#### Inheritance
+* Some styles are passed from parent to children
+
+```CSS
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    span {
+      font-style: italic;
+    }
+```
+```HTML
+<p>I’m red, 18px, and bold.
+  <span>I am those and also italic.</span>
+</p>
+```
+
+-
+#### CSS Specificity
 * If two CSS selectors apply to the same element, the one with higher specificity wins
 * There are 4 categories which define the specificity level of a selector
 * Each category has a certain number of points
@@ -170,7 +221,7 @@ There are three ways to insert CSS
 
 -
 #### IDs
-* A unique identifier for the page elements using (#)
+* An unique identifier for the page elements using (#)
 * Has a value of 100 points
 
 ```CSS
@@ -182,7 +233,7 @@ There are three ways to insert CSS
 
 -
 #### Classes, attributes, and pseudo-classes
-* This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.
+* This category includes .classes, '[attributes]' and pseudo-classes such as :hover, :focus etc.
 * Has a value of 10 points
 
 ```CSS
@@ -211,16 +262,116 @@ There are three ways to insert CSS
 
 -
 #### Specificity Chart
+
 <img src="specificity-chart.png">
 
 
 -
 -
+### CSS Styling with Fonts, Size, and Colors
+* Various fonts, sizes, and colors can be used through CSS to style your HTML web page
 
 
 -
+#### Font-family
+* The font-family property assigns a font to the specified element(s)
+* Generic family is a group of font families with a similar look
+* Font family is a specific font family. The property should hold several font names as a fallback system if the browser does not support the first font.
+
+```CSS
+  body {
+  /* A font family name and a generic family name */
+  font-family: "Arial", sans-serif;
+  font-family: "Times New Roman", serif;
+
+  /* A generic family name */
+  font-family: serif;
+  }
+```
+
 -
-## Lecture Summary
-* Topic 1 Summary
-* Topic 2 Summary
-* Topic 3 Summary
+#### Difference Between Serif and Sans-serif
+<img src="sans-serif.png">
+
+
+-
+#### Font-Size
+* font-size sets the size of the font
+* 12- 14px is recommended for the body text accessibility
+
+```CSS
+    p {
+     /* <length> values */
+     font-size: 12px;
+
+     /* <percentage> values */
+     font-size: 80%;
+    }
+```
+
+-
+#### Font
+* The font property is shorthand for font-style, font-variant, font-weight, font-size, and font-family
+* Shorthand properties allow you to set multiple values with one declaration
+
+```CSS
+    p {
+      font: italic bold 12px "Arial", sans-serif;
+    }
+```
+
+
+-
+#### Color
+* The color property is used to set the color of the text
+* Colors in CSS can be specified using
+  * a color name - red
+  * a HEX value - #ff0000
+  * an RGB or RGBA value - rgb(255)
+
+```CSS
+ p {color: red;}
+```
+
+
+-
+#### Background-Color
+* The background-color property changes the color of the Background
+
+```CSS
+    p {
+    background-color: black;
+    background-color: #000000;
+    background-color: rgba(0,0,0);
+    }
+```
+
+
+-
+#### Text-Align
+* The text-align property is used to set the horizontal alignment of a text
+* Text can be left or right aligned, centered, or justify
+* When the text-align property is set to "justify", each line is stretched so that every line has equal width and the left and right margins are straight. Similar to magazines and newspapers
+
+```CSS
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    div {
+        text-align: justify;
+    }
+```
+
+-
+-
+### A list of all the CSS properties
+* https://css-tricks.com/almanac/properties/
