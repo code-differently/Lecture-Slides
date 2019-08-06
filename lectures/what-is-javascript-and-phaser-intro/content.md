@@ -162,27 +162,8 @@ z = x + y;         // How to compute values
 * JavaScript uses **arithmetic operators** `( + - * / )` to **compute** values
 
 
--
-#### 
-* Discussion point 3C.1
-* Discussion point 3C.2
-* Discussion point 3C.3
 
 
 
 
 
-
-
-
-
-
-
-
-
--
--
-## Lecture Summary
-* Topic 1 Summary
-* Topic 2 Summary
-* Topic 3 Summary
