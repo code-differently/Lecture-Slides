@@ -1,7 +1,7 @@
 {
   "name": "lecture-slides",
   "version": "1.0.0",
-  "homepage": "http://code-differently.github.io/Lecture-Slides",
+  "homepage": ".",
   "description": "## Description * The purpose of this repository is to create a centralized location for CodeDifferently slides.",
   "main": "index.js",
   "dependencies": {
