@@ -26,10 +26,9 @@ const app = express();
 app.listen(3000);
 ```
 
-
 -
 -
-### Routing
+### Basic Routing
 
 -
 #### Get
@@ -46,7 +45,6 @@ app.get('/lame', (request, response) => {
     response.send('Hello Code Rhino!');
 });
 ```
-
 
 -
 #### Post
@@ -68,7 +66,6 @@ app.listen(3000, () => {
 });
 ```
 
-
 -
 #### Rerouting
 ```javascript
@@ -77,23 +74,29 @@ app.post('/cool', (req, res) => {
   res.redirect('/');
 });
 ```
--
--
-### Middleware
 
 -
-#### Basics
+-
+### Request Data
 
-Middleware takes in the `request` and `response`, preforms an action, and goes onto the `next` middleware. This happens on each request
-
+-
+#### Route Parameters
 ```javascript
-app.use((req, res, next) => { 
-    console.log("Hello Middleware");
-    next();
+router.get('/:id', (req, res) => {
+    res.send(req.params.id)
 });
 ```
+A colon signifies a path parameter. This can be thought of as a variable in our route. Whatever value the user sends in the route can be accessed through the request paramerters. For example, if the url was `localhost:8080/3` than id would be 3
 
-![diagram](https://res.cloudinary.com/practicaldev/image/fetch/s--BooDKgDv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/babo58difyn1wkvyg8zv.png)
+-
+#### Route Queries
+URL: `https:codediff.com/classes?lang=js`
+
+```javascript
+app.get("/classes", (req, res) => {
+    console.log(req.query) //{ language: 'js' }
+})
+```
 
 -
 #### Cookies
@@ -114,3 +117,68 @@ let cookies = req.cookies;
 res.clearCookie('cookiename');
 ```
 
+-
+-
+### Misc.
+
+-
+#### Static Files 
+```javascript
+app.use('/static', express.static('public'));
+```
+
+-
+#### Modular Routes
+```javascript
+//MainRoutes.js
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+    const name = req.cookies.username;
+    if (name) {
+      res.render('index', { name });
+    } else {
+      res.redirect('/hello');
+    }
+});
+
+module.exports = router;
+```
+
+```javascript
+//app.js
+const app = express();
+const mainRoutes = require('./routes/MainRoutes');
+app.use('/main', mainRoutes);
+app.listen(3000);
+```
+
+-
+#### Mock Data
+
+```javascript
+//students.json
+["Kaleb", "Tariq", "Stephanie"]
+```
+```javascript
+const { data } = require('./students.json');
+const { students } = data;
+router.get('/students', (req, res) => {
+    res.send(students);
+});
+``` 
+
+-
+### Middleware
+
+Middleware takes in the `request` and `response`, preforms an action, and goes onto the `next` middleware. This happens on each request
+
+```javascript
+app.use((req, res, next) => { 
+    console.log("Hello Middleware");
+    next();
+});
+```
+
+![diagram](https://res.cloudinary.com/practicaldev/image/fetch/s--BooDKgDv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/babo58difyn1wkvyg8zv.png)
