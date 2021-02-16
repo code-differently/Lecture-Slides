@@ -14,6 +14,10 @@
 
 		<title>Code Differently Lecture Template</title>
 
+		<script>
+			const rootURL = () => (window.location.hostname === "0.0.0.0") ? "../../.." : "Lecture-Slides/"
+		</script>
+
 		<meta name="description" content="A lecture template for reveal.js-based CodeDifferently Lessons">
 		<meta name="author" content="CodeDifferently">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -56,7 +60,7 @@
 				<section>
 					<!-- This logo is used in every copy of this file. Drop a new file
 					into img/Logo.jpg to change it across all slide decks -->
-					<img src="../../../resources/img/logo-white.png" >
+					<img id="logo" src="../../../resources/img/logo-white.png">
 				</section>
 
 				<!--
@@ -102,6 +106,10 @@
 				]
 			});
 
+		</script>
+
+		<script>
+			// document.getElementById("logo").src = rootURL() + "/resources/img/logo-white.png";
 		</script>
 
 	</body>
